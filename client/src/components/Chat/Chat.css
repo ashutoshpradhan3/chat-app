@@ -1,0 +1,89 @@
+/* Chat.css */
+
+/* Outer container with some padding & background */
+.outerContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Chat container box */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh; /* taller chat box */
+  width: 60vw; /* wider chat box */
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* InfoBar */
+.infoBar {
+  background: #4a148c;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Messages section */
+.messages {
+  flex: 1; /* takes all remaining space */
+  padding: 20px;
+  overflow-y: auto;
+  background: #e0e0e0;
+}
+
+/* Input box */
+.form {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background: #fafafa;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.sendButton {
+  background: #4a148c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sendButton:hover {
+  background: #6a1b9a;
+}
+
+/* TextContainer for users */
+.textContainer {
+  width: 20vw;
+  padding: 20px;
+  background: #fff;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  height: 80vh;
+  overflow-y: auto;
+}

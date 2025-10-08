@@ -1,0 +1,126 @@
+/* Reset and base */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Outer container */
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  animation: backgroundShift 10s infinite alternate;
+}
+
+/* Background animation */
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Inner container */
+.joinInnerContainer {
+  width: 28%;
+  background: rgba(20, 20, 30, 0.85);
+  padding: 50px 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(0, 150, 255, 0.8);
+}
+
+/* Heading */
+.heading {
+  font-size: 2.8em;
+  margin-bottom: 35px;
+  border-bottom: 2px solid #00f0ff;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* Input fields */
+.joinInput {
+  padding: 15px 25px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: 2px solid #00f0ff;
+  font-size: 16px;
+  outline: none;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.joinInput::placeholder {
+  color: #a0a0a0;
+}
+
+.joinInput:focus {
+  box-shadow: 0 0 20px #00f0ff;
+  border-color: #00f0ff;
+}
+
+/* Button */
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00f0ff, #2979FF);
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 0 15px #00f0ff;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #2979FF, #00f0ff);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 25px #00f0ff;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .joinInnerContainer {
+    width: 85%;
+    padding: 30px 20px;
+  }
+
+  .heading {
+    font-size: 2.2em;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
